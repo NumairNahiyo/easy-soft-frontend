@@ -1,0 +1,21 @@
+{
+    "ImageBaseUrl": "/assets/images/",
+    "NotNoundImage": "404.jpg",
+    "NotFoundTitle": "Page Not Found",
+    "NotFoundDescription": "How Product Design And Development Services Works For Your Project. How Product Design And Development Services Works For Your Project",
+    "ContactInfo": {
+        "SkypeLink": "",
+        "MailLink": "",
+        "WhatsappLink": "",
+        "MobileNumber": "",
+        "Facebook": "",
+        "Twiter": "",
+        "Instagram": ""
+    },
+    "hire_us_page": {
+        "label": "FLUTTER APP DEVELOPMENT",
+        "title": "We’re On A Mission To Empower Developers To Build Successful Projects Super Quick!",
+        "description": "We are a result-oriented team of Flutter experts who have built products used in 30k+ digital projects.",
+        "gen_in_touch_description": "We are a result-oriented team of Flutter experts who have built products used in 30k+ digital projects."
+    }
+}

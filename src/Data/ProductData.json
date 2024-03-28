@@ -1,0 +1,85 @@
+{
+    "product_label": "PORTFOLIO",
+    "product_description": "See What We Have Recently Built",
+    "product_title": "We’re On A Mission To Empower Developers To Build Successful Projects Super Quick!",
+    "product_items": [
+        {
+            "slug": "american-wings-application",
+            "mobile_image_name": "Group 209.png",
+            "desktop_image_name": "Group 158.png",
+            "type": "full"
+        },
+        {
+            "slug": "american-wings-application",
+            "mobile_image_name": "portfolio-second-one.png",
+            "desktop_image_name": "portfolio-second-one.png",
+            "type": "half"
+        },
+        {
+            "slug": "american-wings-application",
+            "mobile_image_name": "portfolio-third-one.png",
+            "desktop_image_name": "portfolio-third-one.png",
+            "type": "out_half"
+        }
+    ],
+    "productPageData": [
+        {
+            "slug": "american-wings-application",
+            "main_banner": "PortfolioBanner1.png",
+            "features_section": {
+                "label": "FEATURES",
+                "title": "Discover work-boosting features at your fingertips!",
+                "cards": [
+                    {
+                        "title": "Startups",
+                        "icon_image": "FeaturePortfolio.svg",
+                        "description": "Aspiring entrepreneurs with innovative app ideas can count on us to transform their concepts into fully functional, user-centric mobile applications"
+                    },
+                    {
+                        "title": "Startups",
+                        "icon_image": "FeaturePortfolio.svg",
+                        "description": "Aspiring entrepreneurs with innovative app ideas can count on us to transform their concepts into fully functional, user-centric mobile applications"
+                    },
+                    {
+                        "title": "Startups",
+                        "icon_image": "FeaturePortfolio.svg",
+                        "description": "Aspiring entrepreneurs with innovative app ideas can count on us to transform their concepts into fully functional, user-centric mobile applications"
+                    },
+                    {
+                        "title": "Startups",
+                        "icon_image": "FeaturePortfolio.svg",
+                        "description": "Aspiring entrepreneurs with innovative app ideas can count on us to transform their concepts into fully functional, user-centric mobile applications"
+                    },
+                    {
+                        "title": "Startups",
+                        "icon_image": "FeaturePortfolio.svg",
+                        "description": "Aspiring entrepreneurs with innovative app ideas can count on us to transform their concepts into fully functional, user-centric mobile applications"
+                    },
+                    {
+                        "title": "Startups",
+                        "icon_image": "FeaturePortfolio.svg",
+                        "description": "Aspiring entrepreneurs with innovative app ideas can count on us to transform their concepts into fully functional, user-centric mobile applications"
+                    }
+                ]
+            },
+            "main_feature_cards": [
+                {
+                    "label": "INCREASE SALES",
+                    "labelWidth": "200px",
+                    "title": "Get More Bookings, More Business.",
+                    "description": "Aspiring entrepreneurs with innovative app ideas can count on us to transform their concepts into fully functional, user-centric mobile applications. Aspiring entrepreneurs with innovative app ideas can count on us to transform their concepts into fully functional, user-centric mobile applications",
+                    "direction": "right",
+                    "img_url": "Feature1.png"
+                },
+                {
+                    "label": "INCREASE SALES",
+                    "labelWidth": "200px",
+                    "title": "Get More Bookings, More Business.",
+                    "description": "Aspiring entrepreneurs with innovative app ideas can count on us to transform their concepts into fully functional, user-centric mobile applications. Aspiring entrepreneurs with innovative app ideas can count on us to transform their concepts into fully functional, user-centric mobile applications",
+                    "direction": "left",
+                    "img_url": "Feature1.png"
+                }
+            ]
+        }
+    ]
+}

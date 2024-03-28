@@ -1,0 +1,63 @@
+{   
+    "hero_section": {
+    "label": "ABOUT US",
+    "title": "We’re On A Mission To Empower Developers To Build Successful Projects Super Quick!",
+    "image_url": "about-us-illustration.png"
+    },
+    "our_mission_section": {
+        "label": "OUR MISSION",
+        "title": "Defining Excellence In Quick, Cost-Efficient Software Development",
+        "description": "Elexoft Technologies is an IT Software Company founded in Sep 2015 in Pakistan. We are offering multiple services in Website Development, Graphic Designing, Digital Marketing, and We make CMS, CRM and provide ERP solutions. Elexoft is a top software house in Pakistan and also a registered company in Pakistan (PSEB). Additional services that we provide include website Designing, API's Development, SEO Services and IOS app development."
+    },
+    "out_team_section": {
+        "label": "OUR TEAM",
+        "title": "Great Minds, Humble Hearts, Remarkable Products",
+        "cards": [
+            {
+                "image_url": "team1.png",
+                "name": "IMRAN NAHIYO",
+                "type": "Chief Executive Officer"
+            },
+            {
+                "image_url": "team1.png",
+                "name": "IMRAN NAHIYO",
+                "type": "Chief Executive Officer"
+            },
+            {
+                "image_url": "team1.png",
+                "name": "IMRAN NAHIYO",
+                "type": "Chief Executive Officer"
+            },
+            {
+                "image_url": "team1.png",
+                "name": "IMRAN NAHIYO",
+                "type": "Chief Executive Officer"
+            },
+            {
+                "image_url": "team1.png",
+                "name": "IMRAN NAHIYO",
+                "type": "Chief Executive Officer"
+            },
+            {
+                "image_url": "team1.png",
+                "name": "IMRAN NAHIYO",
+                "type": "Chief Executive Officer"
+            },
+            {
+                "image_url": "team1.png",
+                "name": "IMRAN NAHIYO",
+                "type": "Chief Executive Officer"
+            },
+            {
+                "image_url": "team1.png",
+                "name": "IMRAN NAHIYO",
+                "type": "Chief Executive Officer"
+            },
+            {
+                "image_url": "team1.png",
+                "name": "IMRAN NAHIYO",
+                "type": "Chief Executive Officer"
+            }
+        ]
+    }
+}

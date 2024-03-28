@@ -1,0 +1,36 @@
+{
+    "label": "TESTIMONIAL",
+    "title": "We’ve Helped People All Over The World Accomplish Their Goals",
+    "cards": [
+        {
+            "review": "I am thrilled with the purchase! <b>Support is fantastic,</b> and support is perfect! They respond <b>incredibly quickly!</b> Perfect Code, Well documented! So Happy! | manly sales!",
+            "stars": 4,
+            "client_name": "Imran Nahiyo",
+            "client_image": "user-image-1.png"
+        },
+        {
+            "review": "I am thrilled with the purchase! <b>Support is fantastic,</b> and support is perfect! They respond <b>incredibly quickly!</b> Perfect Code, Well documented! So Happy! | manly sales!",
+            "stars": 4,
+            "client_name": "Imran Nahiyo",
+            "client_image": "user-image-1.png"
+        },
+        {
+            "review": "I am thrilled with the purchase! <b>Support is fantastic,</b> and support is perfect! They respond <b>incredibly quickly!</b> Perfect Code, Well documented! So Happy! | manly sales!",
+            "stars": 4,
+            "client_name": "Imran Nahiyo",
+            "client_image": "user-image-1.png"
+        },
+        {
+            "review": "I am thrilled with the purchase! <b>Support is fantastic,</b> and support is perfect! They respond <b>incredibly quickly!</b> Perfect Code, Well documented! So Happy! | manly sales!",
+            "stars": 4,
+            "client_name": "Imran Nahiyo",
+            "client_image": "user-image-1.png"
+        },
+        {
+            "review": "I am thrilled with the purchase! <b>Support is fantastic,</b> and support is perfect! They respond <b>incredibly quickly!</b> Perfect Code, Well documented! So Happy! | manly sales!",
+            "stars": 4,
+            "client_name": "Imran Nahiyo",
+            "client_image": "user-image-1.png"
+        }
+    ]
+}

@@ -1,0 +1,175 @@
+{
+    "label": "SERVICE",
+    "title": "We’re On A Mission To Empower Developers To Build Successful Projects Super Quick!",
+    "ServicePageData": [
+        {
+            "slug": "web-development",
+            "heroSection": {
+                "label": "FLUTTER APP DEVELOPMENT",
+                "labelWidth": "200px",
+                "title": "We’re On A Mission To Empower Developers To Build Successful Projects Super Quick!",
+                "description": "We are a result-oriented team of Flutter experts who have built products used in 30k+ digital projects."
+            },
+            "RightFit": {
+                "hide": false,
+                "label": "THE RIGHT FIT",
+                "labelWidth": "100px",
+                "title": "Who We're Here to Serve?",
+                "RightFitCards": [
+                    {
+                        "title": "Startups",
+                        "description": "Aspiring entrepreneurs with innovative app ideas can count on us to transform their concepts into fully functional, user-centric mobile applications"
+                    },
+                    {
+                        "title": "Startups",
+                        "description": "Aspiring entrepreneurs with innovative app ideas can count on us to transform their concepts into fully functional, user-centric mobile applications"
+                    },
+                    {
+                        "title": "Startups",
+                        "description": "Aspiring entrepreneurs with innovative app ideas can count on us to transform their concepts into fully functional, user-centric mobile applications"
+                    }
+                ]
+            },
+            "offeringData": {
+                "hide": false,
+                "label": "OFFERING",
+                "labelWidth": "200px",
+                "title": "What We Are Great At ?",
+                "offeringCards": [
+                    {
+                        "Number": 1,
+                        "title": "Api / Backend development",
+                        "description": "Aspiring entrepreneurs with innovative app ideas can count on us to transform their concepts into fully functional, user-centric mobile applications"
+                    },
+                    {
+                        "Number": 2,
+                        "title": "Api / Backend development",
+                        "description": "Aspiring entrepreneurs with innovative app ideas can count on us to transform their concepts into fully functional, user-centric mobile applications"
+                    },
+                    {
+                        "Number": 3,
+                        "title": "Api / Backend development",
+                        "description": "Aspiring entrepreneurs with innovative app ideas can count on us to transform their concepts into fully functional, user-centric mobile applications"
+                    },
+                    {
+                        "Number": 4,
+                        "title": "Api / Backend development",
+                        "description": "Aspiring entrepreneurs with innovative app ideas can count on us to transform their concepts into fully functional, user-centric mobile applications"
+                    }
+                ]
+            },
+            "FaqData": {
+                "label": "FAQ",
+                "labelWidth": "200px",
+                "title": "FAQ: Your Questions, Our Answers",
+                "description": "Don’t find your answer here? just send us a message for any query.",
+                "Questions": [
+                    {
+                        "Question": "Do Iqonic Design work with all Clients?",
+                        "Answer": "No! Iqonic Design is primarily a product company. We only have limited time bandwidth to offer our services to customers. Hence, before starting any new assignment we make sure that slot is available and importantly whether we are a good fit to meet the expectations.",
+                        "open": false
+                    },
+                    {
+                        "Question": "Do Iqonic Design work with all Clients?",
+                        "Answer": "No! Iqonic Design is primarily a product company. We only have limited time bandwidth to offer our services to customers. Hence, before starting any new assignment we make sure that slot is available and importantly whether we are a good fit to meet the expectations.",
+                        "open": false
+                    },
+                    {
+                        "Question": "Do Iqonic Design work with all Clients?",
+                        "Answer": "No! Iqonic Design is primarily a product company. We only have limited time bandwidth to offer our services to customers. Hence, before starting any new assignment we make sure that slot is available and importantly whether we are a good fit to meet the expectations.",
+                        "open": false
+                    },
+                    {
+                        "Question": "Do Iqonic Design work with all Clients?",
+                        "Answer": "No! Iqonic Design is primarily a product company. We only have limited time bandwidth to offer our services to customers. Hence, before starting any new assignment we make sure that slot is available and importantly whether we are a good fit to meet the expectations.",
+                        "open": false
+                    }
+                ]
+            }
+        },
+        {
+            "slug": "application-development",
+            "heroSection": {
+                "label": "FLUTTER APP DEVELOPMENT",
+                "labelWidth": "200px",
+                "title": "We’re On A Mission To Empower Developers To Build Successful Projects Super Quick!",
+                "description": "We are a result-oriented team of Flutter experts who have built products used in 30k+ digital projects."
+            },
+            "RightFit": {
+                "hide": false,
+                "label": "THE RIGHT FIT",
+                "labelWidth": "100px",
+                "title": "Who We're Here to Serve?",
+                "RightFitCards": [
+                    {
+                        "title": "Startups",
+                        "description": "Aspiring entrepreneurs with innovative app ideas can count on us to transform their concepts into fully functional, user-centric mobile applications"
+                    },
+                    {
+                        "title": "Startups",
+                        "description": "Aspiring entrepreneurs with innovative app ideas can count on us to transform their concepts into fully functional, user-centric mobile applications"
+                    },
+                    {
+                        "title": "Startups",
+                        "description": "Aspiring entrepreneurs with innovative app ideas can count on us to transform their concepts into fully functional, user-centric mobile applications"
+                    }
+                ]
+            },
+            "offeringData": {
+                "hide": false,
+                "label": "OFFERING",
+                "labelWidth": "200px",
+                "title": "What We Are Great At ?",
+                "offeringCards": [
+                    {
+                        "Number": 1,
+                        "title": "Api / Backend development",
+                        "description": "Aspiring entrepreneurs with innovative app ideas can count on us to transform their concepts into fully functional, user-centric mobile applications"
+                    },
+                    {
+                        "Number": 2,
+                        "title": "Api / Backend development",
+                        "description": "Aspiring entrepreneurs with innovative app ideas can count on us to transform their concepts into fully functional, user-centric mobile applications"
+                    },
+                    {
+                        "Number": 3,
+                        "title": "Api / Backend development",
+                        "description": "Aspiring entrepreneurs with innovative app ideas can count on us to transform their concepts into fully functional, user-centric mobile applications"
+                    },
+                    {
+                        "Number": 4,
+                        "title": "Api / Backend development",
+                        "description": "Aspiring entrepreneurs with innovative app ideas can count on us to transform their concepts into fully functional, user-centric mobile applications"
+                    }
+                ]
+            },
+            "FaqData": {
+                "label": "FAQ",
+                "labelWidth": "200px",
+                "title": "FAQ: Your Questions, Our Answers",
+                "Questions": [
+                    {
+                        "Question": "Do Iqonic Design work with all Clients?",
+                        "Answer": "No! Iqonic Design is primarily a product company. We only have limited time bandwidth to offer our services to customers. Hence, before starting any new assignment we make sure that slot is available and importantly whether we are a good fit to meet the expectations.",
+                        "open": false
+                    },
+                    {
+                        "Question": "Do Iqonic Design work with all Clients?",
+                        "Answer": "No! Iqonic Design is primarily a product company. We only have limited time bandwidth to offer our services to customers. Hence, before starting any new assignment we make sure that slot is available and importantly whether we are a good fit to meet the expectations.",
+                        "open": false
+                    },
+                    {
+                        "Question": "Do Iqonic Design work with all Clients?",
+                        "Answer": "No! Iqonic Design is primarily a product company. We only have limited time bandwidth to offer our services to customers. Hence, before starting any new assignment we make sure that slot is available and importantly whether we are a good fit to meet the expectations.",
+                        "open": false
+                    },
+                    {
+                        "Question": "Do Iqonic Design work with all Clients?",
+                        "Answer": "No! Iqonic Design is primarily a product company. We only have limited time bandwidth to offer our services to customers. Hence, before starting any new assignment we make sure that slot is available and importantly whether we are a good fit to meet the expectations.",
+                        "open": false
+                    }
+                ]
+            }
+        }
+    ]
+}

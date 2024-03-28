@@ -1,0 +1,72 @@
+{
+    "HeroSection": {
+        "label": "HIRE US",
+        "title": "Welcome to easysoft !",
+        "description": "Get your project done by our experts, who have built 200+ products used in 25000+ projects worldwide. As the best product design and development services company, we take up only limited projects where we are a good fit and can deliver value to our clients.",
+        "image_url": "illustration-herosection.png"
+    },
+    "AboutSection": {
+        "label": "ABOUT US",
+        "title": "Welcome to Easysoft – <span style='color: #203281'>Fastest Growing IT Company</span>",
+        "description": "Elexoft Technologies is an IT Software Company founded in Sep 2015 in Pakistan. We are offering multiple services in Website Development, Graphic Designing, Digital Marketing, and We make CMS, CRM and provide ERP solutions. Elexoft is a top software house in Pakistan and also a registered company in Pakistan (PSEB). Additional services that we provide include website Designing, API's Development, SEO Services and IOS app development.",
+        "image_url": "about-us-illustration.png"
+    },
+    "ServiceSection": {
+        "label": "SERVICES",
+        "title": "What Can We Help You With...",
+        "service_cards": [
+            {
+                "title": "Web development",
+                "description": "Get your project done by our experts, who have built 200+ products used in 25000+ projects worldwide. As the best product design and development services company, we take up only limited projects where we are a good fit and can deliver value to our clients.",
+                "card_type": "half",
+                "slug": "web-development",
+                "icon": "fa-globe"
+            },
+            {
+                "title": "Application development",
+                "description": "Get your project done by our experts, who have built 200+ products used in 25000+ projects worldwide. As the best product design and development services company, we take up only limited projects where we are a good fit and can deliver value to our clients.",
+                "card_type": "half",
+                "slug": "application-development",
+                "icon": "fa-globe"
+            },
+            {
+                "title": "Web development",
+                "description": "Get your project done by our experts, who have built 200+ products used in 25000+ projects worldwide. As the best product design and development services company, we take up only limited projects where we are a good fit and can deliver value to our clients.",
+                "card_type": "full",
+                "slug": "web-development",
+                "icon": "fa-globe",
+                "image_url": "about-us-illustration.png"
+            }
+        ]
+    },
+    "ProcessSection": {
+        "label": "PROCESS",
+        "title": "How Product Design And Development Services Works For Your Project",
+        "process_cards": [
+            {
+                "label": "STEP-1",
+                "image_url": "requirement-icon.svg",
+                "title": "Requirements",
+                "description": "You send us your requirements."
+            },
+            {
+                "label": "STEP-2",
+                "image_url": "requirement-icon.svg",
+                "title": "Requirements",
+                "description": "You send us your requirements."
+            },
+            {
+                "label": "STEP-3",
+                "image_url": "requirement-icon.svg",
+                "title": "Requirements",
+                "description": "You send us your requirements."
+            },
+            {
+                "label": "STEP-4",
+                "image_url": "requirement-icon.svg",
+                "title": "Requirements",
+                "description": "You send us your requirements."
+            }
+        ]
+    }
+}
