@@ -2,22 +2,23 @@ import React from 'react'
 import ServiceCard from '../ServiceCard'
 import Fade from 'react-reveal/Fade';
 
-function ServiceSection({ServiceSectionData , ImageBaseUrl}) {
+function ServiceSection({service}) {
+
+  console.log(service);
   return (
     <Fade bottom cascade>
     <div className='service-section'>
     <div className='serive-top-details'>
       <div className='service-label'>
-        <p>{ServiceSectionData.label}</p>
+        <p>SERVICES</p>
       </div>
-      <h3>{ServiceSectionData.title}</h3>
+      <h3>What Can We Help You With...</h3>
     </div>
     <div className='service-card-row'>  
  
         {
-            ServiceSectionData?.service_cards?.map((item)=> (
-              
-                <ServiceCard Data={item} ImageBaseUrl={ImageBaseUrl} />
+            service?.map((item)=> (
+                <ServiceCard Data={item} />
             ))
         }
 

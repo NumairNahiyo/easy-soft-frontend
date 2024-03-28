@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import EnquiryForm from '../componets/EnquiryForm';
 import Footer from '../componets/footer';
@@ -12,6 +12,7 @@ import ServiceSectionComponet from '../componets/LandingPage/ServiceSection';
 import ProcessSectionComponet from '../componets/LandingPage/ProcessSection';
 import PortfolioCard from '../componets/PortfolioCard';
 import Fade from 'react-reveal/Fade';
+import Api from '../utlities/api';
 
 function LandingPage() {
 
@@ -19,11 +20,27 @@ function LandingPage() {
   const { ContactInfo, ImageBaseUrl } = UtlisData;
 
   const { portfolio_label , portfolio_description , portfolio_items } = PortfolioData;
+
+  const [homeSetting , setHomeSetting] = useState();
+
+  const [service , setService] = useState();
+
+  useEffect(() => {
+    Api.get("/home-setting").then(res => {
+        setHomeSetting(res.data.data);
+    });
+
+    Api.get("/service").then(res => {
+      setService(res.data.data);
+  });
+  },[]);
+
+
   return (
     <div className='landing-page'>
-      <HeroSectionComponet HeroSectionData={HeroSection} ContactInfo={ContactInfo} ImageBaseUrl={ImageBaseUrl} />
-      <AboutSectionComponet AboutSectionData={AboutSection} ImageBaseUrl={ImageBaseUrl} />
-      <ServiceSectionComponet ServiceSectionData={ServiceSection} ImageBaseUrl={ImageBaseUrl} />
+      <HeroSectionComponet homeSetting={homeSetting} />
+      <AboutSectionComponet homeSetting={homeSetting} />
+      <ServiceSectionComponet service={service} />
 
 
       <div className='category-language-section'>
@@ -89,7 +106,7 @@ function LandingPage() {
         </div>
       </div>
 
-      <ProcessSectionComponet ProcessSectionData={ProcessSection} ImageBaseUrl={ImageBaseUrl} />
+      <ProcessSectionComponet homeSetting={homeSetting}  />
 
 
    

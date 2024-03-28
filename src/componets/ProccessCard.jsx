@@ -4,9 +4,9 @@ function ProccessCard({ data, ImageBaseUrl, index }) {
     return (
         <div className='card-wrapper'>
             <div className='card-box'>
-                <div className='step-label'>{data.label}</div>
+                <div className='step-label'>STEP {index + 1}</div>
                 <div className='card-icon'>
-                    <img src={ImageBaseUrl + data.image_url} />
+                    <img src={"https://admin.easysoft.services/uploads/"  + data.image} />
                 </div>
                 <div className='card-details'>
                     <h4>{data.title}</h4>
@@ -16,7 +16,7 @@ function ProccessCard({ data, ImageBaseUrl, index }) {
             {
                 index !== 3 && (
                     <div className='card-space-dase'>
-                        <img src={ImageBaseUrl + "card-dash.svg"} />
+                        <img src={"/assets/images/card-dash.svg"} />
                     </div>
                 )
             }

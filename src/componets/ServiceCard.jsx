@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Fade from 'react-reveal/Fade';
 
-function ServiceCard({ Data, ImageBaseUrl }) {
+function ServiceCard({ Data }) {
     if (Data.card_type === "half") {
         return (
             
@@ -36,11 +36,7 @@ function ServiceCard({ Data, ImageBaseUrl }) {
                         </p>
                         <Link to={"/service/" + Data.slug} className='dark-button-theme rounded-btn'>Read More</Link>
                     </div>
-                    <div className='service-card-illustation'>
-                        <div className='illustration-container'>
-                            <img src={ImageBaseUrl + Data.image_url} alt="service card illustration" />
-                        </div>
-                    </div>
+                   
                 </div>
                 </Fade>
             </div>

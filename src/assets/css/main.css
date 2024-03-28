@@ -273,20 +273,24 @@ body {
     margin-top: 10px;
     padding-right: 10px;
 
-
+    width: 100%;
 }
 
 .service-section .service-card-row .service-full-card .service-card-wrapper {
     display: flex;
     flex-wrap: wrap;
-    height: 250px;
+    /* height: 250px; */
     overflow: hidden;
+}
+
+.about-illustration-container img{
+    width: 100%;
 }
 
 
 
 .service-section .service-card-row .service-card-details {
-    width: 65%;
+    width: 100%;
 
 }
 
@@ -490,6 +494,10 @@ body {
     width: 100%;
     padding: 10px;
     text-align: center;
+}
+
+.process-section .process-breakup-container .card-container .card-wrapper .card-box .card-icon img{
+    width: 100%;
 }
 
 .process-section .process-breakup-container .card-container .card-wrapper .card-box .card-details {

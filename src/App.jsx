@@ -28,7 +28,7 @@ function App() {
     const delay = setTimeout(() => {
       setLoading(false);
       clearTimeout(delay);
-    }, 5000);
+    }, 500);
 
     // Cleanup the timeout if the component unmounts
     return () => clearTimeout(delay);
