@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Fade from 'react-reveal/Fade';
 
-function PortfolioCard({ Data, ImageBaseUrl }) {
+function PortfolioCard({ Data }) {
 
 
     if(Data.type === "out_half"){
@@ -11,11 +11,11 @@ function PortfolioCard({ Data, ImageBaseUrl }) {
             <Link to={"/portfolio/" + Data.slug}>
             <Fade bottom cascade>
                 <div className='desktop-image-container'>
-                    <img src={ImageBaseUrl + Data.desktop_image_name} />
+                    <img src={"https://admin.easysoft.services/uploads/portfolio/"  + Data.desktop_banner_image} />
                 </div>
 
                 <div className='mobile-image-container'>
-                    <img src={ImageBaseUrl + Data.mobile_image_name} />
+                    <img src={"https://admin.easysoft.services/uploads/portfolio/"  + Data.mobile_banner_image} />
                 </div>
                 </Fade>
             </Link>
@@ -29,11 +29,11 @@ function PortfolioCard({ Data, ImageBaseUrl }) {
                 <Link to={"/portfolio/" + Data.slug}>
                 <Fade bottom cascade>
                     <div className='desktop-image-container'>
-                        <img src={ImageBaseUrl + Data.desktop_image_name} />
+                        <img src={"https://admin.easysoft.services/uploads/portfolio/"  + Data.desktop_banner_image} />
                     </div>
 
                     <div className='mobile-image-container'>
-                        <img src={ImageBaseUrl + Data.mobile_image_name} />
+                        <img src={"https://admin.easysoft.services/uploads/portfolio/"  + Data.mobile_banner_image} />
                     </div>
                     </Fade>
                 </Link>
@@ -45,10 +45,10 @@ function PortfolioCard({ Data, ImageBaseUrl }) {
                 <Link to={"/portfolio/" + Data.slug}>
                 <Fade bottom cascade>
                     <div className='desktop-image-container'>
-                        <img src={ImageBaseUrl + Data.desktop_image_name} />
+                        <img src={"https://admin.easysoft.services/uploads/portfolio/"   + Data.desktop_banner_image } />
                     </div>
                     <div className='mobile-image-container'>
-                        <img src={ImageBaseUrl + Data.mobile_image_name} />
+                        <img src={"https://admin.easysoft.services/uploads/portfolio/"   + Data.mobile_banner_image} />
                     </div>
                     </Fade>
                 </Link>

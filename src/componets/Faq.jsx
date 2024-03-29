@@ -6,7 +6,7 @@ function Faq({ FaqData }) {
     const [FaqDataState, setFaqData] = useState();
 
     useEffect(() => {
-        setFaqData(FaqData.Questions);
+        setFaqData(FaqData);
     }, [FaqData]);
 
     const HandleChange = index => {
@@ -24,9 +24,9 @@ function Faq({ FaqData }) {
         <Fade bottom>
         <div className='faq-container'>
             <div className='faq-container-detail'>
-                <div className='label'>{FaqData.label}</div>
-                <h3>{FaqData.title}</h3>
-                <p>{FaqData.description}</p>
+                <div className='label'>FAQ</div>
+                <h3>FAQ: Your Questions, Our Answers</h3>
+                <p>Don’t find your answer here? just send us a message for any query.</p>
             </div>
 
             <div className='faq-cards-row'>
@@ -36,11 +36,11 @@ function Faq({ FaqData }) {
                         <div className={(item.open === false) ? 'faq-card ' : 'faq-card open'}>
                             <div className='faq-wrapper'>
                                 <div className='question'>
-                                    <h3>{item.Question}</h3>
+                                    <h3>{item.question}</h3>
                                     <button onClick={() => HandleChange(index)}>{(item.open === false) ? <i className='fa fa-plus'></i> : <i className='fa fa-minus'></i>}</button>
                                 </div>
                                 <div className='answer'>
-                                    <p>{item.Answer}</p>
+                                    <p>{item.answer }</p>
                                 </div>
                             </div>
                         </div>

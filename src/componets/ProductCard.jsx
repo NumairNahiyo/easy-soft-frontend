@@ -11,11 +11,11 @@ function ProductCard({ Data, ImageBaseUrl }) {
             <Link to={"/product/" + Data.slug}>
             <Fade bottom cascade>
                 <div className='desktop-image-container'>
-                    <img src={ImageBaseUrl + Data.desktop_image_name} />
+                <img src={"https://admin.easysoft.services/uploads/Product/"  + Data.desktop_banner_image} />
                 </div>
 
                 <div className='mobile-image-container'>
-                    <img src={ImageBaseUrl + Data.mobile_image_name} />
+                <img src={"https://admin.easysoft.services/uploads/Product/"  + Data.mobile_banner_image} />
                 </div>
                 </Fade>
             </Link>
@@ -29,11 +29,11 @@ function ProductCard({ Data, ImageBaseUrl }) {
                 <Link to={"/product/" + Data.slug}>
                 <Fade bottom cascade>
                     <div className='desktop-image-container'>
-                        <img src={ImageBaseUrl + Data.desktop_image_name} />
+                    <img src={"https://admin.easysoft.services/uploads/Product/"  + Data.desktop_banner_image} />
                     </div>
 
                     <div className='mobile-image-container'>
-                        <img src={ImageBaseUrl + Data.mobile_image_name} />
+                    <img src={"https://admin.easysoft.services/uploads/Product/"  + Data.mobile_banner_image} />
                     </div>
                     </Fade>
                 </Link>
@@ -45,10 +45,10 @@ function ProductCard({ Data, ImageBaseUrl }) {
                 <Link to={"/product/" + Data.slug}>
                 <Fade bottom cascade>
                     <div className='desktop-image-container'>
-                        <img src={ImageBaseUrl + Data.desktop_image_name} />
+                    <img src={"https://admin.easysoft.services/uploads/Product/"  + Data.desktop_banner_image} />
                     </div>
                     <div className='mobile-image-container'>
-                        <img src={ImageBaseUrl + Data.mobile_image_name} />
+                    <img src={"https://admin.easysoft.services/uploads/Product/"  + Data.mobile_banner_image} />
                     </div>
                     </Fade>
                 </Link>

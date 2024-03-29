@@ -12,66 +12,70 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-function Testimonial() {
+function Testimonial({ testimonial }) {
 
 
     return (
         <Fade bottom cascade>
-        <div className='testimonial-section'>
-            <div className='testimonial-detail'>
-                <div className='testimonial-label'><p>{TestimonialData.label}</p></div>
-                <p className='main-title'>{TestimonialData.title}</p>
-            </div>
-            <div className='testimonial-container'>
-                <Swiper
-                    modules={[Navigation, Pagination, Scrollbar, A11y]}
-                    spaceBetween={25}
+            <div className='testimonial-section'>
+                <div className='testimonial-detail'>
+                    <div className='testimonial-label'><p>TESTIMONIAL</p></div>
+                    <p className='main-title'>We’ve Helped People All Over The World Accomplish Their Goals</p>
+                </div>
+                <div className='testimonial-container'>
+                    <Swiper
+                        modules={[Navigation, Pagination, Scrollbar, A11y]}
+                        spaceBetween={25}
 
-                    pagination={{ clickable: true }}
-                    breakpoints={{ 900: { slidesPerView: 3 }, 768: { slidesPerView: 1 } }}
-                    thumbs={true}
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
-                >
-                    {
-                        TestimonialData.cards.map((item) => (
-                            <SwiperSlide>
-                                <div className='testimonial-card'>
-                                    <p className='main-description' dangerouslySetInnerHTML={{ __html: item.review }}>
-                                    </p>
-                                    <div className='testimonial-stars'>
-                                        <div className='stars'>
-                                            {
-                                                Array.from({ length: 5 }).map((_, index) => {
+                        pagination={{ clickable: true }}
+                        breakpoints={{ 900: { slidesPerView: 3 }, 768: { slidesPerView: 1 } }}
+                        thumbs={true}
+                        onSlideChange={() => console.log('slide change')}
+                        onSwiper={(swiper) => console.log(swiper)}
+                    >
+                        {
+                            testimonial?.map((item) => (
+                                <SwiperSlide>
+                                    <div className='testimonial-card'>
+                                        <p className='main-description' dangerouslySetInnerHTML={{ __html: item.review }}>
+                                        </p>
+                                        <div className='testimonial-stars'>
+                                            <div className='stars'>
+                                                {
+                                                    Array.from({ length: 5 }).map((_, index) => {
 
-                                                    if (index < item.stars) {
-                                                        return <i key={index} className='fa fa-star dark'></i>;
-                                                    } else {
-                                                        return <i key={index} className='fa fa-star light'></i>;
-                                                    }
-                                                })
-                                            }
+                                                        if (index < item.stars) {
+                                                            return <i key={index} className='fa fa-star dark'></i>;
+                                                        } else {
+                                                            return <i key={index} className='fa fa-star light'></i>;
+                                                        }
+                                                    })
+                                                }
 
 
+                                            </div>
+                                        </div>
+                                        <div className='testimonial-user'>
+                                            <div className='user-image'>
+                                                {(item.image !== "") ?
+                                                    <img src={"https://admin.easysoft.services/uploads/Testimonial/" + item.image} />
+                                                    :
+                                                    <div className='pick-design'>{ item.name.substring(0, 2).toUpperCase()}</div>
+                                                }
+                                            </div>
+                                            <p>{item.name}</p>
                                         </div>
                                     </div>
-                                    <div className='testimonial-user'>
-                                        <div className='user-image'>
-                                            <img src={UtlisData.ImageBaseUrl+ item.client_image} />
-                                        </div>
-                                        <p>{item.client_name}</p>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                        ))
-                    }
+                                </SwiperSlide>
+                            ))
+                        }
 
 
 
-                </Swiper>
+                    </Swiper>
+                </div>
+
             </div>
-
-        </div>
         </Fade>
     )
 }

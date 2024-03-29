@@ -19,21 +19,34 @@ function LandingPage() {
   const { HeroSection, AboutSection, ServiceSection, ProcessSection } = LandingPageData;
   const { ContactInfo, ImageBaseUrl } = UtlisData;
 
-  const { portfolio_label , portfolio_description , portfolio_items } = PortfolioData;
+  const { portfolio_label, portfolio_description, portfolio_items } = PortfolioData;
 
-  const [homeSetting , setHomeSetting] = useState();
+  const [homeSetting, setHomeSetting] = useState();
 
-  const [service , setService] = useState();
+  const [service, setService] = useState();
+
+  const [portfolio , setPortfolio] = useState();
+
+  const [testimonial , setTestimonial] = useState();
 
   useEffect(() => {
     Api.get("/home-setting").then(res => {
-        setHomeSetting(res.data.data);
+      setHomeSetting(res.data.data);
     });
 
     Api.get("/service").then(res => {
       setService(res.data.data);
-  });
-  },[]);
+    });
+
+    Api.get("/portfolio").then(res => {
+      setPortfolio(res.data.data);
+    });
+
+
+    Api.get("/testimonial").then(res => {
+      setTestimonial(res.data.data);
+    });
+  }, []);
 
 
   return (
@@ -45,95 +58,93 @@ function LandingPage() {
 
       <div className='category-language-section'>
         <div className='category-language-details'>
-        <Fade left>
-          <div className='service-label'>
-            <p>CATEGORIES</p>
-          </div>
-          <h3 className='main-title'>We are <span>Good</span> Experts in</h3>
-          <p className='main-description'>
-            We stay on top of the latest tech advancements to ensure your project is completed quicklyand uses best of the software and frameworks suitable for your project...
-          </p>
+          <Fade left>
+            <div className='service-label'>
+              <p>CATEGORIES</p>
+            </div>
+            <h3 className='main-title'>We are <span>Good</span> Experts in</h3>
+            <p className='main-description'>
+              We stay on top of the latest tech advancements to ensure your project is completed quicklyand uses best of the software and frameworks suitable for your project...
+            </p>
           </Fade>
         </div>
         <div className='category-coding-icons'>
-        <Fade right>
-          <div className='coding-cards'>
+          <Fade right>
+            <div className='coding-cards'>
 
-            <div className='coding-card'>
-              <div className='coding-card-wrapper'>
-                <img src="/assets/images/Flutter.png" />
-                <p>Flutter</p>
+              <div className='coding-card'>
+                <div className='coding-card-wrapper'>
+                  <img src="/assets/images/Flutter.png" />
+                  <p>Flutter</p>
+                </div>
               </div>
-            </div>
 
-            <div className='coding-card'>
-              <div className='coding-card-wrapper'>
-                <img src="/assets/images/react.png" />
-                <p>React JS</p>
+              <div className='coding-card'>
+                <div className='coding-card-wrapper'>
+                  <img src="/assets/images/react.png" />
+                  <p>React JS</p>
+                </div>
               </div>
-            </div>
 
-            <div className='coding-card'>
-              <div className='coding-card-wrapper'>
-                <img src="/assets/images/next.png" />
-                <p>Next JS</p>
+              <div className='coding-card'>
+                <div className='coding-card-wrapper'>
+                  <img src="/assets/images/next.png" />
+                  <p>Next JS</p>
+                </div>
               </div>
-            </div>
 
-            <div className='coding-card'>
-              <div className='coding-card-wrapper'>
-                <img src="/assets/images/CSharp.svg" />
-                <p>C Sharp</p>
+              <div className='coding-card'>
+                <div className='coding-card-wrapper'>
+                  <img src="/assets/images/CSharp.svg" />
+                  <p>C Sharp</p>
+                </div>
               </div>
-            </div>
 
-            <div className='coding-card'>
-              <div className='coding-card-wrapper'>
-                <img src="/assets/images/Javascript.svg" />
-                <p>Javascript</p>
+              <div className='coding-card'>
+                <div className='coding-card-wrapper'>
+                  <img src="/assets/images/Javascript.svg" />
+                  <p>Javascript</p>
+                </div>
               </div>
-            </div>
 
-            <div className='coding-card'>
-              <div className='coding-card-wrapper'>
-                <img src="/assets/images/Laravel.svg" />
-                <p>Laravel</p>
+              <div className='coding-card'>
+                <div className='coding-card-wrapper'>
+                  <img src="/assets/images/Laravel.svg" />
+                  <p>Laravel</p>
+                </div>
               </div>
-            </div>
 
-          </div>
+            </div>
           </Fade>
         </div>
       </div>
 
-      <ProcessSectionComponet homeSetting={homeSetting}  />
+      <ProcessSectionComponet homeSetting={homeSetting} />
 
-
-   
       <Fade bottom cascade>
-      <div className='portfolio-section'>
-        <div className='porfolio-detail'>
-          <div className='portfolio-label'><p>{portfolio_label}</p></div>
-          <p className='main-title'>{portfolio_description}</p>
+        <div className='portfolio-section'>
+          <div className='porfolio-detail'>
+            <div className='portfolio-label'><p>PORTFOLIO</p></div>
+            <p className='main-title'>See What We Have Recently Built</p>
+          </div>
+          <div className='portfolio-card-container'>
+            {
+              portfolio?.map((item) => (
+                <PortfolioCard Data={item} />
+              ))
+            }
+          </div>
+          <div className='portfolio-button'>
+            <Link to="/portfolio">See All Portfolio</Link>
+          </div>
         </div>
-        <div className='portfolio-card-container'>
-          {
-            portfolio_items?.map((item) => (
-              <PortfolioCard Data={item} ImageBaseUrl={ImageBaseUrl} />
-            ))
-          }
-        </div>
-        <div className='portfolio-button'>
-          <Link to="/portfolio">See All Portfolio</Link>
-        </div>
-      </div>
       </Fade>
 
-  
-      
-      <Testimonial />
+
+
+      <Testimonial  testimonial={testimonial} />
       <EnquiryForm type={"simple"} />
-      <Footer />
+      <Footer homeSetting={homeSetting} />
     </div>
   )
 }

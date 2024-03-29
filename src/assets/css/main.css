@@ -536,6 +536,10 @@ body {
     padding: 40px 30px;
 }
 
+
+.portfolio-section img{
+    width: 100%;
+}
 .portfolio-section .porfolio-detail {
     width: 100%;
 }
@@ -606,13 +610,28 @@ body {
     background-color: var(--primary-color);
 }
 
+.testimonial-section .testimonial-user{
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-section .testimonial-user .pick-design{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(17, 41, 150, 0.2);
+}
+
 .testimonial-section .testimonial-detail {
     width: 100%;
     margin-bottom: 20px;
 }
 
 .testimonial-section .testimonial-detail .testimonial-label {
-    color: var(--secondary-color);
+    color: var(--dark-btn-color);
     margin-bottom: 5px;
     font-size: 15px;
     font-style: normal;
@@ -635,6 +654,7 @@ body {
 .testimonial-section .testimonial-container .testimonial-card {
     padding: 15px;
     background-color: var(--dark-btn-color);
+    word-wrap: break-word; /* or use overflow-wrap: break-word; */
     border-radius: 5px;
     cursor: pointer;
 }
@@ -642,6 +662,7 @@ body {
 .testimonial-section .testimonial-container .testimonial-card .main-description {
     font-size: 16px;
     margin-bottom: 10px;
+    text-wrap: break-word;
 }
 
 .testimonial-section .testimonial-container .testimonial-card .testimonial-stars {
@@ -674,8 +695,14 @@ body {
 
 .testimonial-section .testimonial-container .testimonial-card .testimonial-user p {
     margin-left: 10px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     font-size: 16px;
+}
+
+.testimonial-section .testimonial-container .testimonial-card .testimonial-user img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
 }
 
 
@@ -958,7 +985,9 @@ body {
     align-items: center;
     padding-top: 30px;
 }
-
+.team-section .team-hero-section .hero-image img{
+ max-width: 100%;
+}
 .our-mission-section {
     padding: 60px 30px;
 }
@@ -1406,6 +1435,19 @@ body {
     background: #FFF;
 }
 
+.portfolio-container .portfolio-section .portfolio-card .card-wrapper .icon{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+
+
+
+.portfolio-container .portfolio-section .portfolio-card .card-wrapper .icon img{
+    width: 100%;
+    height: 100%;
+}
+
 .portfolio-feature-section {
     width: 100%;
     padding: 0px 30px;
@@ -1458,7 +1500,9 @@ body {
     justify-content: right;
 }
 
-
+.portfolio-feature-section .portfolio-card .portfolio-image img{
+    width: 100%;
+}
 .portfolio-feature-section .portfolio-card.left-to-right .portfolio-image{
     justify-content: left;
 }
@@ -1568,6 +1612,49 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+
+.progress-container .progress-card-rows{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.progress-container .progress-card-rows .progress-card{
+    width: 25%;
+    padding: 25px;
+}
+
+.progress-container .progress-card-rows .progress-card-wrapper{
+    padding:40px 25px 25px 25px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    text-align: center;
+}
+.CircularProgressbar .CircularProgressbar-path{
+    stroke: #6153FE;
+}
+
+
+.progress-container .progress-card-rows .progress-card-wrapper h3{
+    color: var(--dark-btn-color);
+    margin-top: 20px;
+    font-size: 35px;
+}
+
+.CircularProgressbar .CircularProgressbar-text{
+    fill: white;
+}
+
+.CircularProgressbar{
+    width: 60%;
+    margin: auto    ;
+}
+
+.CircularProgressbar .CircularProgressbar-trail{
+    stroke: white;
 }
 
 .swiper-slide {
@@ -1683,4 +1770,15 @@ body {
 
 .label p {
     font-size: 12px;
+}
+
+
+
+.trems-condition{
+    padding: 40px;
+}
+
+.trems-condition h1{
+    margin-bottom: 30px;
+    color: var(--primary-color);
 }

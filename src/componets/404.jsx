@@ -9,7 +9,7 @@ function NotFound() {
     <div className='not-found-section'>
       <div className='detail-container'>
             <h3>{NotFoundTitle}</h3>
-            <p>{NotFoundDescription}</p>
+            <p>Not Found</p>
             <Link to="/">Go Back</Link>
         </div>
         <div className='image-container'>

@@ -27,6 +27,10 @@
         position: fixed;
     }
 
+    .progress-container .progress-card-rows .progress-card{
+        width: 100%;
+    }
+
     .Topbar-container .links-section.open ul {
         display: block;
         width: 95%;

@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Fade from 'react-reveal/Fade';
+import Api from '../utlities/api';
 function EnquiryForm({ type }) {
-
+    const [homeSetting, setHomeSetting] = useState();
+    useEffect(() => {
+      Api.get("/home-setting").then(res => {
+        setHomeSetting(res.data.data);
+      });
+  
+    },[]);
+  
 
     if (type === "simple") {
         return (
@@ -149,21 +157,21 @@ function EnquiryForm({ type }) {
                     <div className='contact-information'>
                         <div className='blue-container-box'>
                             <h3 className='main-title'>Get in touch</h3>
-                            <p className='main-description'>We are a result-oriented team of Flutter experts who have built products used in 30k+ digital projects.</p>
+                            <p className='main-description'>{homeSetting?.contact_description}</p>
                             <div className='social-container'>
-                                <Link className='social'>
-                                    <i className='fa fa-facebook'></i>
-                                </Link>
-                                <Link className='social'>
-                                    <i className='fa fa-instagram'></i>
-                                </Link>
-                                <Link className='social'>
-                                    <i className='fa fa-twitter'></i>
-                                </Link>
+                            <Link className='social' to={homeSetting?.facebook_link}>
+                                <i className='fa fa-facebook'></i>
+                            </Link>
+                            <Link className='social' to={homeSetting?.instagram_link}>
+                                <i className='fa fa-instagram'></i>
+                            </Link>
+                            <Link className='social' to={homeSetting?.twiter_link   }>
+                                <i className='fa fa-twitter'></i>
+                            </Link>
                             </div>
                             <ul>
                                 <li>
-                                    <i className='fa fa-phone'></i> <Link>+91 2390 2333</Link>
+                                    <i className='fa fa-phone'></i> <Link>{homeSetting?.mobile_number}</Link>
                                 </li>
                             </ul>
                         </div>

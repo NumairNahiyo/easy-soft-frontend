@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Fade from 'react-reveal/Fade';
 
-function Footer() {
+function Footer({homeSetting}) {
     return (
         <Fade bottom cascade>
         <div className='footer-container'>
@@ -11,7 +11,7 @@ function Footer() {
                     <img src="/assets/images/logo1.png" />
                 </div>
                 <p>
-                    Get your project done by our experts, who have built 200+ products used in 25000+ projects worldwide. As the best product design and development services company, we take up only limited projects where we are a good fit and can deliver value to our clients.
+                        {homeSetting?.description}
                 </p>
                 <Link className='btn'>Hire us</Link>
             </div>
@@ -21,14 +21,12 @@ function Footer() {
                 </div>
                 <ul>
                     <li>
-                        <Link to="/">Contact us</Link>
+                        <Link to="/make-quote">Contact us</Link>
                     </li>
                     <li>
-                        <Link to="/">Terms of use</Link>
+                        <Link to="/trems-conditions">Terms of use</Link>
                     </li>
-                    <li>
-                        <Link to="/">Refund Policy</Link>
-                    </li>
+                
                 </ul>
             </div>
 
@@ -38,20 +36,18 @@ function Footer() {
                 </div>
                 <ul>
                     <li>
-                        <Link to="/">About</Link>
+                        <Link to="/team">About</Link>
                     </li>
-                    <li>
-                        <Link to="/">Support</Link>
-                    </li>
+              
                     <li>
                         <div className='social-container'>
-                            <Link className='social'>
+                            <Link className='social' to={homeSetting?.facebook_link}>
                                 <i className='fa fa-facebook'></i>
                             </Link>
-                            <Link className='social'>
+                            <Link className='social' to={homeSetting?.instagram_link}>
                                 <i className='fa fa-instagram'></i>
                             </Link>
-                            <Link className='social'>
+                            <Link className='social' to={homeSetting?.twiter_link   }>
                                 <i className='fa fa-twitter'></i>
                             </Link>
                         </div>

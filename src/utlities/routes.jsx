@@ -10,6 +10,8 @@ import PortfolioPage from "../pages/portfolio/PortfolioPage";
 import ProductPage from "../pages/product/ProductPage";
 import Product from "../pages/Product";
 import MakeQuote from "../pages/make-quote";
+import Tremscondition from "../pages/Tremscondition";
+import NotFound from "../componets/404";
 
 export const router = createBrowserRouter([
     {
@@ -47,6 +49,15 @@ export const router = createBrowserRouter([
     {
       path: "/make-quote",
       element: <><Topbar /><MakeQuote /> </>
+    },
+
+    {
+      path: "/trems-conditions",
+      element: <><Topbar /><Tremscondition /></>
+    },
+    {
+      path: "/*",
+      element: <><Topbar /><NotFound /></>
     },
 ])
   
