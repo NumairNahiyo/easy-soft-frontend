@@ -113,7 +113,12 @@ function LandingPage() {
                   <p>Laravel</p>
                 </div>
               </div>
-
+              <div className='coding-card'>
+                <div className='coding-card-wrapper'>
+                  <img src="/assets/images/figma.svg" />
+                  <p>Figma</p>
+                </div>
+              </div>
             </div>
           </Fade>
         </div>

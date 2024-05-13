@@ -24,7 +24,7 @@ function Footer({homeSetting}) {
                         <Link to="/make-quote">Contact us</Link>
                     </li>
                     <li>
-                        <Link to="/trems-conditions">Terms of use</Link>
+                        <Link to="/trems-conditions">Terms of condition</Link>
                     </li>
                 
                 </ul>

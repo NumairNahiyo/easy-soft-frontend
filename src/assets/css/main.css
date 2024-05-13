@@ -266,6 +266,7 @@ body {
 .service-section .service-card-row .service-half-card {
     width: 50%;
     padding-right: 10px;
+    margin-top: 10px;
 }
 
 .service-section .service-card-row .service-full-card {
@@ -497,7 +498,8 @@ body {
 }
 
 .process-section .process-breakup-container .card-container .card-wrapper .card-box .card-icon img{
-    width: 100%;
+    width: 60%;
+    height: 100px;
 }
 
 .process-section .process-breakup-container .card-container .card-wrapper .card-box .card-details {
@@ -574,7 +576,7 @@ body {
 }
 
 .portfolio-section .portfolio-card-container .portfolio-card.full-screen {
-    width: 98%;
+    width: 100%;
 }
 
 .portfolio-section .portfolio-card-container .portfolio-card.one-half-screen {
@@ -972,10 +974,10 @@ body {
 .team-section .team-hero-section .hero-detail p {
     color: #111;
     font-family: Karla;
-    font-size: 40px;
+    font-size: 18px;
     font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 25px;
 }
 
 .team-section .team-hero-section .hero-image {
@@ -1641,7 +1643,7 @@ body {
 .progress-container .progress-card-rows .progress-card-wrapper h3{
     color: var(--dark-btn-color);
     margin-top: 20px;
-    font-size: 35px;
+    font-size: 22px;
 }
 
 .CircularProgressbar .CircularProgressbar-text{

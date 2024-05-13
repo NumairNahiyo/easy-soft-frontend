@@ -34,9 +34,9 @@ function Topbar() {
                 <li>
                     <Link to="/portfolio" className={location.pathname === "/portfolio" ? 'active' : ""} >Portfolio</Link>
                 </li>
-                <li>
+                {/* <li>
                     <Link to="/products" className={location.pathname === "/products" ? 'active' : ""}>Product</Link>
-                </li>
+                </li> */}
                 <li>
                     <Link to="/service" className={location.pathname === "/service" ? 'active' : ""}>Service</Link>
                 </li>

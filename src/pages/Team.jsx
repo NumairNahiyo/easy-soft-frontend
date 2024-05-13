@@ -86,7 +86,7 @@ function Team() {
                             <div className='progress-card'>
                             <div className='progress-card-wrapper'>
                                 <div className='progress-background-design'></div>
-                                <CircularProgressbar value={item.value} text={`${item.value}%`} />
+                                <CircularProgressbar value={item.value} text={`${item.value}`} />
                                 <div className='details'>
                                     <h3>{item.name}</h3>
                                 </div>
